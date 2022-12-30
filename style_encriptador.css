@@ -1,0 +1,21 @@
+.logo{
+    margin: 3em 2em;
+}
+
+.ingresarTexto{
+    display: inline-block;
+    margin: 0.5em 2em;
+    resize: none;
+    font-size: 30px;
+    width: 660px;
+    height: 400px;
+    outline: none;
+    /*border: none;*/
+}
+
+
+.copiar{
+    display: inline-block;
+    width: 5em;
+    height: 3em;
+}
