@@ -1,28 +1,60 @@
 .logo{
-    margin: 3em 2em;
+    margin: 2em auto 1em 2em;
+
 }
 
 .caja-1{
     display: inline-block;
 }
 
+.advertencia{
+    margin-left: 11em;
+
+}
+
 .ingresarTexto{
-    display: inline-block;
-    margin: 0.5em 2em;
+    position: relative;
+    margin: 0 4em 1em 5em;
     resize: none;
     font-size: 30px;
-    width: 660px;
+    width: 675px;
     height: 400px;
     outline: none;
     /*border: none;*/
+}
+
+.button1{
+    position: relative;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    margin: 10px 0 30px 11em;
+}
+
+.button2{
+    position: relative;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    margin: 10px 30px 30px 2em;
 }
 
 .caja-2{
     display: inline-block;
 }
 
+.resultado{
+    align-items: stretch;
+    width: 328px;
+    height: 460px;
+    position: relative;
+}
+
 .copiar{
-    display: inline-block;
-    width: 5em;
-    height: 3em;
+    margin-top: 2em;
+    width: 328px;
+    height: 67px;
+    position: relative;
+    
+    
 }
