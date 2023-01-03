@@ -2,6 +2,10 @@
     margin: 3em 2em;
 }
 
+.caja-1{
+    display: inline-block;
+}
+
 .ingresarTexto{
     display: inline-block;
     margin: 0.5em 2em;
@@ -13,6 +17,9 @@
     /*border: none;*/
 }
 
+.caja-2{
+    display: inline-block;
+}
 
 .copiar{
     display: inline-block;

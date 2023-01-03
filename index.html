@@ -17,12 +17,16 @@
     
         <main>
             <div>
-                <textarea class="ingresarTexto"></textarea>
-                <button class="button1">Encriptar</button>
-                <button class="button2">Desencriptar</button>
-                <textarea class="resultado" readonly="readonly"></textarea>
+                <ul class="caja-1">
+                    <li><textarea class="ingresarTexto"></textarea></li>
+                    <p>Solo letras minusculas y sin acentos</p>
+                    <li><button class="button1">Encriptar</button><button class="button2">Desencriptar</button></li>
+                </ul>
+                <ul class="caja-2">
+                    <li><textarea class="resultado" readonly="readonly"></textarea></li>
+                    <li><button class="copiar">Copiar</button></li>
+                </ul>
                 
-                <button class="copiar">Copiar</button>
             </div>
             
             <script src="js/script_encriptador.js"></script>
