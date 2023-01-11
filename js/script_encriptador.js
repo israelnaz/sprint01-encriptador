@@ -3,6 +3,7 @@ var button1 = document.querySelector(".button1");
 var button2 = document.querySelector(".button2");
 var buttonCopy = document.querySelector(".copiar");
 var resultado = document.querySelector(".resultado");
+var imagenInicio = document.querySelector(".sinMensaje");
 
 /*VARIABLES DE ENCRIPTACION*/
 const a = "ai";
@@ -56,7 +57,9 @@ function botonEncriptar(){
         }
         impresion = arr.join("");
         resultado.value= impresion;
-        console.log(arr);         
+        imagenInicio.style.display = "none";
+        buttonCopy.style.display="inline";
+        //console.log(arr);         
     }
     
 } 
@@ -87,7 +90,7 @@ function copiar (){
     document.execCommand("copy");
     ingresarTexto.value="";
 }
-
+buttonCopy.style.display="none";
 ingresarTexto.focus();
 button1.onclick = botonEncriptar;
 button2.onclick = botonDesencriptar;

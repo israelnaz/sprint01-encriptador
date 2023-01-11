@@ -4,34 +4,51 @@
 }
 
 .caja-1{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    
+
 }
 
 .advertencia{
     margin-left: 11em;
-
 }
 
 .ingresarTexto{
     position: relative;
-    margin: 0 4em 1em 5em;
     resize: none;
     font-size: 30px;
     width: 675px;
     height: 400px;
     outline: none;
+    margin: 0 4em 1em 5em;
     /*border: none;*/
 }
 
 .button1{
+    background-color: white;
+    border:1px solid #0A3871;
+    color: #0A3871;
+    font-size: 15px;
+    border-radius: 15px;
     position: relative;
     width: 328px;
     height: 67px;
     padding: 24px;
-    margin: 10px 0 30px 11em;
+    margin: 10px 0 30px 10em;
+}
+
+.button1:hover{
+    background-color: #0A3871;
+    color: aliceblue;
 }
 
 .button2{
+    background-color: #D8DFE8;
+    border:1px solid #0A3871;
+    color: #0A3871;
+    font-size: 16px;
+    border-radius: 16px;
     position: relative;
     width: 328px;
     height: 67px;
@@ -39,9 +56,16 @@
     margin: 10px 30px 30px 2em;
 }
 
-.caja-2{
-    display: inline-block;
+.button2:hover{
+    background-color: #0A3871;
+    color: aliceblue; 
 }
+
+.caja-2{
+    display: flex;
+    flex-direction: row;
+}
+
 
 .resultado{
     align-items: stretch;
@@ -50,11 +74,15 @@
     position: relative;
 }
 
+
 .copiar{
+    background-color: white;
+    border:1px solid #0A3871;
+    color: #0A3871;
+    font-size: 15px;
+    border-radius: 16px;
     margin-top: 2em;
     width: 328px;
     height: 67px;
-    position: relative;
-    
-    
+    position: relative;   
 }
