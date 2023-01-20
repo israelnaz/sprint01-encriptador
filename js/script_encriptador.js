@@ -30,6 +30,13 @@ function botonEncriptar(){
         resultado.value="";
         ingresarTexto.value="";
         ingresarTexto.focus();
+        noMsj();
+        imagenInicio.style.display = "inline";
+    }
+    else if(textoIngresado==""){
+        alert("ingrese un valor");
+        noMsj();
+        imagenInicio.style.display = "inline";
     }
     else {
         var impresion;
@@ -59,6 +66,8 @@ function botonEncriptar(){
         resultado.value= impresion;
         imagenInicio.style.display = "none";
         buttonCopy.style.display="inline";
+        resultado.style.display="inline";
+
         //console.log(arr);         
     }
     
@@ -90,7 +99,13 @@ function copiar (){
     document.execCommand("copy");
     ingresarTexto.value="";
 }
-buttonCopy.style.display="none";
+
+function noMsj(){
+    resultado.style.display="none";
+    buttonCopy.style.display="none";
+}
+
+noMsj();
 ingresarTexto.focus();
 button1.onclick = botonEncriptar;
 button2.onclick = botonDesencriptar;
