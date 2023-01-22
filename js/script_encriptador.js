@@ -5,6 +5,8 @@ var buttonCopy = document.querySelector(".copiar");
 var resultado = document.querySelector(".resultado");
 var caja_resultado = document.querySelector(".caja-2");
 var imagenInicio = document.querySelector(".sinMensaje");
+var iconoAlerta = document.querySelector(".icon2");
+var iconoPrecaucion = document.querySelector(".icon");
 
 /*VARIABLES DE ENCRIPTACION*/
 const a = "ai";
@@ -27,12 +29,15 @@ function botonEncriptar(){
     var textoIngresado = ingresarTexto.value;
     //var encriptado = textoIngresado.replaceAll(/e/g, e) .replaceAll(/i/g, i) .replaceAll(/a/g, a) .replaceAll("o", o) .replaceAll("u", u);
     if(verificar(textoIngresado) == true){
-        alert("ingrese Un caracter valido");
+        //alert("ingrese un caracter valido");
+        iconosdeAlerta();
         resultado.value="";
         ingresarTexto.value="";
         ingresarTexto.focus();
         noMsj();
         imagenInicio.style.display = "inline";
+        
+
     }
     else if(textoIngresado==""){
         alert("ingrese un valor");
@@ -69,6 +74,9 @@ function botonEncriptar(){
         buttonCopy.style.display="inline";
         resultado.style.display="inline";
         caja_resultado.style.display="inline";
+        iconoPrecaucion.style.display="initial";
+        iconoAlerta.style.display="none";
+
 
         //console.log(arr);         
     }
@@ -107,8 +115,13 @@ function noMsj(){
     buttonCopy.style.display="none";
     caja_resultado.style.display="none";
 }
+function iconosdeAlerta(){
+    iconoAlerta.style.display="flex";
+    iconoPrecaucion.style.display="none";
+}
 
 noMsj();
+iconoAlerta.style.display="none";
 ingresarTexto.focus();
 button1.onclick = botonEncriptar;
 button2.onclick = botonDesencriptar;

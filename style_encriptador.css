@@ -1,35 +1,57 @@
 body{
-    background-color: #D8DFE8;
+    background: #F3F5FC;
 }
 
 .logo{
-    margin: 2em auto 1em 2em;
+    margin: 2em 2em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    position: absolute;
+
 
 }
 
 .caja-1{
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 80px;
     
 }
 
 .advertencia{
-    margin-left: 7em;
+    margin-left: 130px;
+}
+
+.icon{
+    color: #495057;
+    position: absolute;
+    margin-left: -20px;
+}
+
+.icon2{
+    color: black;
+    margin-left: -20px;
+    position: absolute;
 }
 
 .ingresarTexto{
-    background-color: #D8DFE8;
+    background-color: #F3F5FC;
     color: #0A3871;
     resize: none;
     font-size: 30px;
     width: 675px;
     height: 400px;
     outline: none;
-    margin: 0px 2em 10px 3em;
-    padding: 23px;
+    margin: 15px 20px 10px 90px;
+    padding-left: 32px;
+    padding-right: 23px;
+    padding-top: 23px;
+    padding-bottom: 23px;
     font-family: 'Franklin Gothic Medium';
-    border: none;
+    /*border: none;*/
 }
 
 .button1{
@@ -37,12 +59,12 @@ body{
     border:1px solid #0A3871;
     color: #e4ebf5;
     font-size: 15px;
-    border-radius: 15px;
+    border-radius: 24px;
     position: relative;
     width: 328px;
     height: 67px;
     padding: 24px;
-    margin: 10px 12px 30px 6em;
+    margin: 10px 12px 30px 116px;
 }
 
 .button1:hover{
@@ -55,42 +77,42 @@ body{
     border:1px solid #0A3871;
     color: #0A3871;
     font-size: 16px;
-    border-radius: 16px;
+    border-radius: 24px;
     position: relative;
     width: 328px;
     height: 67px;
     padding: 24px;
-    margin: 10px 20px 30px 3em;
+    margin: 10px 20px 30px 12px;
 }
 
-.button2:hover{
-    background-color: #0A3871;
-    color: aliceblue; 
+.button2:hover{ 
+    background-color: #F3F5FC;
+    color: #0A3871; 
 }
 
 .caja-2{
-    padding: 30px;
+    padding: 32px;
+    padding-bottom: 15px;
     background-color: white;
     margin-top: 0;
     margin-bottom: 20px;
-    border-radius: 16px;
-    height: 580px;
+    border-radius: 32px;
+    height: 615px;
     border-style: solid;
-    border: 1px solid black;
+    position: absolute;
+    margin-left: 55em;
+    margin-top: 10px;
 }
 
 .resultado{
-    color: #0A3871;
-    position: absolute;
+    color: #495057;
     text-align: left;
-    width: 328px;
-    height:460px;
-    position: relative;
-    font-size: 30px;
-    padding: 15px;
+    width: 336px;
+    height: 518px;
+    font-size: 24px;
     border-radius: 20px;
     resize: none;
-    border: none;
+    /*border: none;*/
     outline: none;
 }
 
@@ -100,10 +122,10 @@ body{
     border:1px solid #0A3871;
     color: #0A3871;
     font-size: 15px;
-    border-radius: 16px;
-    margin-top: 1em;
-    margin-left: 14px;
-    width: 330px;
+    border-radius: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 336px;
     height: 67px;
     position: relative;   
 }
@@ -113,13 +135,20 @@ body{
 }
 
 .sinMensaje{
+    margin-top: 10px;
     background-color: white;
     position: absolute;
-    margin-left: 54em;
+    margin-left: 55em;
+    margin-top: none;
     text-align: center;
     padding: 30px;
-    height: 490px;
-    border-radius: 16px;
+    height: 580px;
+    border-radius: 28px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.imagen2{
+    margin-top: 80px;
 }
 
 .sinMensaje p{
@@ -127,6 +156,5 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     padding: 10px;
-    color: #0A3871;
-
+    color: #343A40;
 }
