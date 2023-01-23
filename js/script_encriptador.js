@@ -35,14 +35,13 @@ function botonEncriptar(){
         ingresarTexto.value="";
         ingresarTexto.focus();
         noMsj();
-        imagenInicio.style.display = "inline";
-        
-
+        imagenInicio.style.display = "inline-block";        
     }
+
     else if(textoIngresado==""){
-        alert("ingrese un valor");
+        alert("ingrese un texto");
         noMsj();
-        imagenInicio.style.display = "inline";
+        imagenInicio.style.display = "inline-block";
     }
     else {
         var impresion;
@@ -71,9 +70,9 @@ function botonEncriptar(){
         impresion = arr.join("");
         resultado.value= impresion;
         imagenInicio.style.display = "none";
-        buttonCopy.style.display="inline";
-        resultado.style.display="inline";
-        caja_resultado.style.display="inline";
+        buttonCopy.style.display="inline-block";
+        resultado.style.display="inline-block";
+        caja_resultado.style.display="inline-block";
         iconoPrecaucion.style.display="initial";
         iconoAlerta.style.display="none";
 
@@ -91,6 +90,11 @@ function botonDesencriptar(){
         ingresarTexto.value="";
         ingresarTexto.focus();
     }
+    
+    else if(textoIngresado==""){
+        alert("Ingrese un texto para encriptar o desencriptar");
+    }
+
     else{
         var desencriptar = textoIngresado.replaceAll(e, vocalesNorm[1]) 
         .replaceAll(i, vocalesNorm[2]) 

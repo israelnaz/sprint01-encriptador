@@ -1,5 +1,7 @@
 body{
     background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
 }
 
 .logo{
@@ -9,8 +11,6 @@ body{
     align-items: flex-start;
     width: fit-content;
     position: absolute;
-
-
 }
 
 .caja-1{
@@ -22,6 +22,7 @@ body{
 }
 
 .advertencia{
+    font-family: 'Inter', sans-serif;
     margin-left: 130px;
 }
 
@@ -38,10 +39,11 @@ body{
 }
 
 .ingresarTexto{
+    font-family: 'Inter', sans-serif;
     background-color: #F3F5FC;
     color: #0A3871;
     resize: none;
-    font-size: 30px;
+    font-size: 32px;
     width: 675px;
     height: 400px;
     outline: none;
@@ -50,11 +52,11 @@ body{
     padding-right: 23px;
     padding-top: 23px;
     padding-bottom: 23px;
-    font-family: 'Franklin Gothic Medium';
     /*border: none;*/
 }
 
 .button1{
+    font-family: 'Inter', sans-serif;
     background-color: #0A3871;
     border:1px solid #0A3871;
     color: #e4ebf5;
@@ -73,6 +75,7 @@ body{
 }
 
 .button2{
+    font-family: 'Inter', sans-serif;
     background-color: #D8DFE8;
     border:1px solid #0A3871;
     color: #0A3871;
@@ -102,9 +105,12 @@ body{
     position: absolute;
     margin-left: 55em;
     margin-top: 10px;
+    margin-right: auto;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 .resultado{
+    font-family: 'Inter', sans-serif;
     color: #495057;
     text-align: left;
     width: 336px;
@@ -116,8 +122,8 @@ body{
     outline: none;
 }
 
-
 .copiar{
+    font-family: 'Inter', sans-serif;
     background-color: white;
     border:1px solid #0A3871;
     color: #0A3871;
@@ -142,6 +148,7 @@ body{
     margin-top: none;
     text-align: center;
     padding: 30px;
+    width: 370px;
     height: 580px;
     border-radius: 28px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -151,10 +158,84 @@ body{
     margin-top: 80px;
 }
 
-.sinMensaje p{
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    padding: 10px;
+.parrafo1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 16px;
+    line-height: 120%;
+    align-self: stretch;
     color: #343A40;
+}
+
+.parrafo2{
+    font-family: 'Inter', sans-serif;
+    color: #495057;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    align-self: stretch;
+}
+
+/*RESPONSIVIDAD*/
+@media screen and (max-width:480px){
+    
+    .logo{
+        position: static;
+        margin: 1em auto 0 -22px;
+    }
+
+    .caja-1{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .ingresarTexto{
+        width: 330px;
+        height: 410px;
+        margin: 0 auto 0 1em;
+        padding: 0;
+    }
+    
+    .advertencia{
+        margin: 1em auto 1em 2.5em ;
+    }
+    .button1, .button2{
+        position: static;
+        margin-left: 2em;
+        margin-right: auto;
+    }
+    .button2{
+        margin-top: 0px;
+    }
+    
+    .sinMensaje{
+        position: static;
+        margin: 2em 2em 4em 2em;
+        width: 328px;
+        height: 186px;
+        padding: 5px;
+    }
+    .parrafo1{
+        margin-top: 4px;
+        padding: 15px;
+    }
+    
+    .parrafo2{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+   .imagen2{
+        display: none;
+    }
+
+    .caja-2{
+        position: static;
+        margin: auto 0.5em 2em 0.5em;
+        width: 330px;
+    }
+
 }
