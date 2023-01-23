@@ -102,6 +102,13 @@ function botonDesencriptar(){
         .replaceAll(o, vocalesNorm[3]) 
         .replaceAll(u, vocalesNorm[4]);
         resultado.value = desencriptar;
+
+        imagenInicio.style.display = "none";
+        buttonCopy.style.display="inline-block";
+        resultado.style.display="inline-block";
+        caja_resultado.style.display="inline-block";
+        iconoPrecaucion.style.display="initial";
+        iconoAlerta.style.display="none";
     
     }
     }
