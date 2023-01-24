@@ -29,7 +29,7 @@ function botonEncriptar(){
     var textoIngresado = ingresarTexto.value;
     //var encriptado = textoIngresado.replaceAll(/e/g, e) .replaceAll(/i/g, i) .replaceAll(/a/g, a) .replaceAll("o", o) .replaceAll("u", u);
     if(verificar(textoIngresado) == true){
-        alert("ingrese un caracter valido");
+        //alert("ingrese un caracter valido");
         iconosdeAlerta();
         resultado.value="";
         ingresarTexto.value="";
@@ -39,7 +39,7 @@ function botonEncriptar(){
     }
 
     else if(textoIngresado==""){
-        alert("ingrese un texto");
+        //alert("ingrese un texto");
         noMsj();
         imagenInicio.style.display = "inline-block";
     }
@@ -85,7 +85,7 @@ function botonEncriptar(){
 function botonDesencriptar(){
     var textoIngresado = ingresarTexto.value;
     if(verificar(textoIngresado) == true){
-        alert("Ingrese un texto en minusculas y sin tildes");
+        //alert("Ingrese un texto en minusculas y sin tildes");
         resultado.value="";
         ingresarTexto.value="";
         ingresarTexto.focus();
@@ -95,7 +95,9 @@ function botonDesencriptar(){
     }
     
     else if(textoIngresado==""){
-        alert("Ingrese un texto para encriptar o desencriptar");
+        //alert("Ingrese un texto para encriptar o desencriptar");
+        noMsj();
+        imagenInicio.style.display = "inline-block";
     }
 
     else{
