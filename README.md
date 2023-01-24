@@ -19,3 +19,7 @@ La letra "u" es convertida para "ufat"
 **Codigo QR de la pagina web**
 
 ![Image text](https://github.com/israelnaz/sprint01-encriptador/blob/master/img/frame.png)
+
+## Autor
+
+Israel Naz
