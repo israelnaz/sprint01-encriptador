@@ -14,5 +14,8 @@ La letra "o" es convertida para "ober"
 
 La letra "u" es convertida para "ufat"
 
-https://raw.githubusercontent.com/israelnaz/sprint01-encriptador/master/asset/frame.png
+![Image text](https://github.com/israelnaz/sprint01-encriptador/blob/master/img/imagen%20encriptador.PNG)
 
+**Codigo QR para la probar la pagina en dispositivos moviles**
+
+![Image text](https://github.com/israelnaz/sprint01-encriptador/blob/master/img/frame.png)
