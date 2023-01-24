@@ -19,7 +19,7 @@ var vocalesEncrip = [a, e, i, o, u];
 var vocalesNorm = ["a", "e", "i", "o", "u"];
 
 function verificar (input){
-    let mayusculas = new RegExp(/[A-Z\u00f1\u00d1\áéíóúÁÉÍÖÚ]+/);
+    let mayusculas = new RegExp(/[A-Z\u00f1\u00d1\áéíóúÁÉÍÖÚ+´]+/);
     var permitido = mayusculas.test(input);
     console.log(permitido);
     return permitido;
@@ -29,7 +29,7 @@ function botonEncriptar(){
     var textoIngresado = ingresarTexto.value;
     //var encriptado = textoIngresado.replaceAll(/e/g, e) .replaceAll(/i/g, i) .replaceAll(/a/g, a) .replaceAll("o", o) .replaceAll("u", u);
     if(verificar(textoIngresado) == true){
-        //alert("ingrese un caracter valido");
+        alert("ingrese un caracter valido");
         iconosdeAlerta();
         resultado.value="";
         ingresarTexto.value="";
@@ -85,10 +85,13 @@ function botonEncriptar(){
 function botonDesencriptar(){
     var textoIngresado = ingresarTexto.value;
     if(verificar(textoIngresado) == true){
-        alert("ingrese Un caracter valido");
+        alert("Ingrese un texto en minusculas y sin tildes");
         resultado.value="";
         ingresarTexto.value="";
         ingresarTexto.focus();
+        iconosdeAlerta();
+        noMsj();
+        imagenInicio.style.display = "inline-block";
     }
     
     else if(textoIngresado==""){
