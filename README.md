@@ -16,6 +16,6 @@ La letra "u" es convertida para "ufat"
 
 ![Image text](https://github.com/israelnaz/sprint01-encriptador/blob/master/img/imagen%20encriptador.PNG)
 
-**Codigo QR para la probar la pagina en dispositivos moviles**
+**Codigo QR de la pagina web**
 
 ![Image text](https://github.com/israelnaz/sprint01-encriptador/blob/master/img/frame.png)
