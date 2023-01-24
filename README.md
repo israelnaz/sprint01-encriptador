@@ -1,5 +1,5 @@
-#sprint01-encriptador
-Primer reto Oracle-one Alura-latam. Encriptador/desencriptador de texto 
+# sprint01-encriptador
+## Primer reto Oracle-one Alura-latam. Encriptador/desencriptador de texto 
 
 Este trabajo en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 Las "llaves" de encriptación que utilizaremos son las siguientes:
